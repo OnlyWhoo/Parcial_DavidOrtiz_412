@@ -1,5 +1,4 @@
-package com.example;
-
+package com.biblioteca;
 public class Libro {
 
     private String titulo;
@@ -22,7 +21,7 @@ public class Libro {
         this.numeroEjemplaresPrestados = numeroEjemplaresPrestados;
     }
 
-    // Get y set
+    // Get y Set
     public String getTitulo() {
         return titulo;
     }
@@ -53,9 +52,8 @@ public class Libro {
         if (numeroEjemplaresPrestados < numeroEjemplares) {
             numeroEjemplaresPrestados++;
             return true;
-        } else {
-            return false;
         }
+        return false;
     }
 
     // devolución
@@ -63,12 +61,10 @@ public class Libro {
         if (numeroEjemplaresPrestados > 0) {
             numeroEjemplaresPrestados--;
             return true;
-        } else {
-            return false;
         }
+        return false;
     }
 
-    // información del libro
     @Override
     public String toString() {
         return "Libro{" +
