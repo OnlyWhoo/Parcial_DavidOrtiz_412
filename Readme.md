@@ -64,9 +64,7 @@ Libro <|-- LibroTexto
 LibroTexto <|-- LibroTextoUNIAJC
 Libro <|-- Novela
 Novela --> TipoNovela
-
-
-
+```
 
 
 
