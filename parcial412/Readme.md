@@ -76,3 +76,16 @@ Caso 2:
 No se puede aplicar herencia entre Libro y Préstamo, porque un préstamo no es una clase derivada de libro sino una acción que se realiza sobre él.
 
 
+Nuevos atributos y método propuestos
+
+Atributo: añoPublicacion
+
+Este atributo permitiría almacenar el año en que fue publicado el libro. Es útil para clasificar libros por antigüedad, realizar búsquedas o mostrar información adicional al usuario.
+
+int anioPublicacion
+
+Atributo: editorial
+
+Este atributo permitiría guardar el nombre de la editorial que publicó el libro. Esto es común en sistemas de bibliotecas y ayuda a identificar la procedencia del libro.
+
+String editorial
