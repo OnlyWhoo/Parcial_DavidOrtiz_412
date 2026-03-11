@@ -37,7 +37,7 @@ public class Main {
         // Libro 4 novela
         Novela novela1 = new Novela(
                 "Juego de tronos",
-                "El señor de los anillos",
+                "George R.R. Martin",
                 7,
                 3,
                 TipoNovela.CIENCIA_FICCION
