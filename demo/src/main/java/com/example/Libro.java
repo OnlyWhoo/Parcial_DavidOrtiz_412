@@ -7,7 +7,6 @@ public class Libro {
     private int numeroEjemplares;
     private int numeroEjemplaresPrestados;
 
-    // Constructor vacío
     public Libro() {
         this.titulo = "";
         this.autor = "";
@@ -15,7 +14,7 @@ public class Libro {
         this.numeroEjemplaresPrestados = 0;
     }
 
-    // Constructor con parámetros
+    // Constructor
     public Libro(String titulo, String autor, int numeroEjemplares, int numeroEjemplaresPrestados) {
         this.titulo = titulo;
         this.autor = autor;
@@ -23,41 +22,33 @@ public class Libro {
         this.numeroEjemplaresPrestados = numeroEjemplaresPrestados;
     }
 
-    // Getters y Setters
-
+    // Get y set
     public String getTitulo() {
         return titulo;
     }
-
     public void setTitulo(String titulo) {
         this.titulo = titulo;
     }
-
     public String getAutor() {
         return autor;
     }
-
     public void setAutor(String autor) {
         this.autor = autor;
     }
-
     public int getNumeroEjemplares() {
         return numeroEjemplares;
     }
-
     public void setNumeroEjemplares(int numeroEjemplares) {
         this.numeroEjemplares = numeroEjemplares;
     }
-
     public int getNumeroEjemplaresPrestados() {
         return numeroEjemplaresPrestados;
     }
-
     public void setNumeroEjemplaresPrestados(int numeroEjemplaresPrestados) {
         this.numeroEjemplaresPrestados = numeroEjemplaresPrestados;
     }
 
-    // Método préstamo
+    // préstamo
     public boolean prestamo() {
         if (numeroEjemplaresPrestados < numeroEjemplares) {
             numeroEjemplaresPrestados++;
@@ -67,7 +58,7 @@ public class Libro {
         }
     }
 
-    // Método devolución
+    // devolución
     public boolean devolucion() {
         if (numeroEjemplaresPrestados > 0) {
             numeroEjemplaresPrestados--;
@@ -77,7 +68,7 @@ public class Libro {
         }
     }
 
-    // Mostrar información del libro
+    // información del libro
     @Override
     public String toString() {
         return "Libro{" +
