@@ -89,3 +89,13 @@ Atributo: editorial
 Este atributo permitiría guardar el nombre de la editorial que publicó el libro. Esto es común en sistemas de bibliotecas y ayuda a identificar la procedencia del libro.
 
 String editorial
+
+Método adicional: disponible()
+
+Este método permitiría verificar si todavía hay ejemplares disponibles para préstamo.
+
+Ejemplo de implementación:
+
+public boolean disponible() {
+    return numeroEjemplares > numeroEjemplaresPrestados;
+}s
