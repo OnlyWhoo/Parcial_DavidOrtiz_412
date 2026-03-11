@@ -62,10 +62,9 @@ class TipoNovela {
 
 Libro <|-- LibroTexto
 LibroTexto <|-- LibroTextoUNIAJC
-Libro <|-- Novela
+Libro <|-- Novelas
 Novela --> TipoNovela
 ```
-
 
 
 
@@ -75,6 +74,7 @@ No se puede aplicar herencia entre Libro y Autor, porque un autor no es un tipo 
 Caso 2:
 No se puede aplicar herencia entre Libro y Préstamo, porque un préstamo no es una clase derivada de libro sino una acción que se realiza sobre él.
 
+ 
 
 Nuevos atributos y método propuestos
 
@@ -84,11 +84,13 @@ Este atributo permitiría almacenar el año en que fue publicado el libro. Es ú
 
 int anioPublicacion
 
+
 Atributo: editorial
 
 Este atributo permitiría guardar el nombre de la editorial que publicó el libro. Esto es común en sistemas de bibliotecas y ayuda a identificar la procedencia del libro.
 
 String editorial
+
 
 Método adicional: disponible()
 
@@ -98,4 +100,4 @@ Ejemplo de implementación:
 
 public boolean disponible() {
     return numeroEjemplares > numeroEjemplaresPrestados;
-}s
+}
